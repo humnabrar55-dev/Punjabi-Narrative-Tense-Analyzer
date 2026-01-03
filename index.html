@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punjabi Narrative Tense Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Polyfills to prevent crashes from libraries expecting Node.js environments
+      window.global = window;
+      if (typeof process === 'undefined') {
+        window.process = { env: {} };
+      }
+    </script>
+    <style>
+      .font-nastaliq {
+        font-family: 'Noto Nastaliq Urdu', serif;
+        line-height: 2.5;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+      }
+      .zebra-table tr:nth-child(even) {
+        background-color: #f1f5f9;
+      }
+      .rtl-input {
+        direction: rtl;
+        text-align: right;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "mammoth": "https://esm.sh/mammoth@1.6.0",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.0.379/build/pdf.mjs",
+    "docx": "https://esm.sh/docx@9.1.0",
+    "file-saver": "https://esm.sh/file-saver@2.0.5",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
